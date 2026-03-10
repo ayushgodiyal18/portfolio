@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ayush Godiyal | Portfolio</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("BG.PNG");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:50px;
+}
+
+.hero p{
+margin-top:10px;
+font-size:20px;
+color:#38bdf8;
+}
+
+.btn{
+margin-top:20px;
+padding:12px 25px;
+border:none;
+background:#38bdf8;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* SECTIONS */
+
+section{
+padding:70px 10%;
+}
+
+.title{
+text-align:center;
+font-size:32px;
+margin-bottom:40px;
+}
+
+/* ABOUT */
+
+#about{
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url(".jpg");
+background-size:cover;
+background-position:center;
+}
+
+.about{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:40px;
+}
+
+.about img{
+width:180px;
+border-radius:50%;
+}
+
+.about-text{
+max-width:600px;
+}
+
+/* EDUCATION */
+
+#education{
+background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+url("o.jpeg");
+background-size:cover;
+background-position:center;
+}
+
+.education{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.edu-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.edu-card h3{
+color:#38bdf8;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+text-align:center;
+border-radius:10px;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+/* CERTIFICATES */
+
+.certificates{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.certificate{
+background:#1e293b;
+padding:15px;
+border-radius:10px;
+text-align:center;
+}
+
+.certificate img{
+width:250px;
+border-radius:5px;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+footer{
+background:#020617;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>Ayush Godiyal</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#github">GitHub</a></li>
+<li><a href="#linkedin">LinkedIn</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>Ayush Godiyal</h1>
+
+<p>Data Analyst | SQL | UI/UX Designer</p>
+
+<a href="#projects"><button class="btn">View My Work</button></a>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<img src="DP.jpeg" alt="Ayush">
+
+<div class="about-text">
+
+<p>
+
+I am a passionate BCA student with a strong interest in data analytics, programming, and UI/UX design. Currently pursuing my Bachelor of Computer Applications at Graphic Era Hill University (2023–2026), I enjoy turning data into meaningful insights and creating user-friendly digital experiences. I have hands-on experience in data analysis and UI/UX design using Figma through my internship, where I developed practical skills in problem-solving, design thinking, and building intuitive interfaces. I am always eager to learn new technologies and continuously improve my skills to create impactful digital solutions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="education">
+
+<div class="edu-card">
+<h3>Bachelor of Computer Applications</h3>
+<p>Graphic Era Hill University</p>
+<p>2023 – 2026</p>
+</div>
+
+<div class="edu-card">
+<h3>Class XII – Science</h3>
+<p>Glacier Public School</p>
+<p>2022 – 2023</p>
+</div>
+
+<div class="edu-card">
+<h3>Class X</h3>
+<p>Glacier Public School</p>
+<p>2020 – 2021</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">Data Analysis</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">UI/UX Design</div>
+<div class="skill">Figma</div>
+<div class="skill">Git</div>
+<div class="skill">SQL</div>
+<div class="skill">Excel</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Student Performance Data Analysis</h3>
+<p>Analyzed student datasets using Python and Pandas to identify academic performance trends.</p>
+</div>
+
+<div class="project">
+<h3>Sales Data Dashboard</h3>
+<p>Built a dataset analysis dashboard showing sales trends and business insights.</p>
+</div>
+
+<div class="project">
+<h3>Nike Air Max Launch Webpage</h3>
+<p>Designed a modern product launch landing page in Figma.</p>
+</div>
+
+<div class="project">
+<h3>Mobile App User Journey</h3>
+<p>Designed a UX user flow inspired by Zobsia.</p>
+</div>
+
+<div class="project">
+<h3>Glass Icon UI Design</h3>
+<p>Created modern glass-style mobile icons in Figma.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CERTIFICATES -->
+
+<section id="certificates">
+
+<h2 class="title">Certifications</h2>
+
+<div class="certificates">
+
+<div class="certificate">
+<img src="CISCO DATA SCIENCE AYUSH GODIYAL CERTIFICATE.jpg">
+<p>Introduction to Data Science – Cisco</p>
+</div>
+
+<div class="certificate">
+<img src="deloite ayush.jpg">
+<p>Data Analytics – Deloitte</p>
+</div>
+
+<div class="certificate">
+<img src="TATA GEN AI AYUSH GODIYAL CERTIFICATE.jpg">
+<p>GenAI Data Analytics – Tata</p>
+</div>
+
+<div class="certificate">
+<img src="JPMORGAN CHASE&CO. AYUSH CERTIFICATE.jpg">
+<p>Software Engineering – JP Morgan</p>
+</div>
+
+<div class="certificate">
+<img src="ayush intenship.jpg">
+<p>UI/UX Design Internship</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- GITHUB -->
+
+<section id="github">
+
+<h2 class="title">GitHub</h2>
+
+<div class="contact">
+
+<p>View my coding and data analysis projects.</p>
+
+<a href="https://github.com/ayushgodiyal18?tab=repositories" target="_blank">
+<button class="btn">Visit My GitHub</button>
+</a>
+
+</div>
+
+</section>
+
+<!-- LINKEDIN -->
+
+<section id="linkedin">
+
+<h2 class="title">LinkedIn</h2>
+
+<div class="contact">
+
+<p>Connect with me professionally.</p>
+
+<a href="https://www.linkedin.com/in/ayush-godiyal-42859b21a?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
+<button class="btn">Visit My LinkedIn</button>
+</a>
+
+</div>
+
+</section>
+
+<!-- RESUME -->
+
+<div style="text-align:center">
+<a href="resume.pdf" download>
+<button class="btn">Download Resume</button>
+</a>
+</div>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="contact">
+
+<p>📍 Dehradun, Uttarakhand</p>
+<p>📞 +91 7217257613</p>
+<p>📧 ayushgodiyal1818@gmail.com</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Ayush Godiyal Portfolio</p>
+
+</footer>
+
+</body>
+
+</html>
