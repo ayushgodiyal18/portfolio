@@ -124,12 +124,22 @@ max-width:600px;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
+
+/* Background Image */
+background-image:url("imag.jpg"); 
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+padding:40px;
+border-radius:12px;
 }
 
 .edu-card{
-background:#1e293b;
+background:rgba(30,41,59,0.85); /* transparent glass effect */
 padding:20px;
 border-radius:10px;
+backdrop-filter: blur(5px);
 }
 
 .edu-card h3{
