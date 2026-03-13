@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,10 +38,11 @@ top:0;
 nav ul{
 display:flex;
 list-style:none;
+flex-wrap:wrap;
 }
 
 nav ul li{
-margin-left:20px;
+margin-left:18px;
 }
 
 nav a{
@@ -61,8 +63,7 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-url("BG.png");
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("BG.png");
 background-size:cover;
 background-position:center;
 }
@@ -85,6 +86,7 @@ background:#38bdf8;
 color:white;
 border-radius:5px;
 cursor:pointer;
+margin:5px;
 }
 
 /* SECTIONS */
@@ -100,13 +102,6 @@ margin-bottom:40px;
 }
 
 /* ABOUT */
-
-#about{
-background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
-url(".jpg");
-background-size:cover;
-background-position:center;
-}
 
 .about{
 display:flex;
@@ -125,13 +120,6 @@ max-width:600px;
 }
 
 /* EDUCATION */
-
-#education{
-background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
-url("college.jpg");
-background-size:cover;
-background-position:center;
-}
 
 .education{
 display:grid;
@@ -232,6 +220,7 @@ margin-top:40px;
 <li><a href="#certificates">Certificates</a></li>
 <li><a href="#github">GitHub</a></li>
 <li><a href="#linkedin">LinkedIn</a></li>
+<li><a href="#resume">Resume</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
@@ -245,7 +234,9 @@ margin-top:40px;
 
 <p>Data Analyst | SQL | UI/UX Designer</p>
 
-<a href="#projects"><button class="btn">View My Work</button></a>
+<a href="#projects">
+<button class="btn">View My Work</button>
+</a>
 
 </div>
 
@@ -257,13 +248,13 @@ margin-top:40px;
 
 <div class="about">
 
-<img src="DP.jpeg" alt="Ayush">
+<img src="DP.jpeg">
 
 <div class="about-text">
 
 <p>
 
-I am a passionate BCA student with a strong interest in data analytics, programming, and UI/UX design. Currently pursuing my Bachelor of Computer Applications at Graphic Era Hill University (2023–2026), I enjoy turning data into meaningful insights and creating user-friendly digital experiences. I have hands-on experience in data analysis and UI/UX design using Figma through my internship, where I developed practical skills in problem-solving, design thinking, and building intuitive interfaces. I am always eager to learn new technologies and continuously improve my skills to create impactful digital solutions.
+I am a passionate BCA student with a strong interest in data analytics, programming, and UI/UX design. Currently pursuing my Bachelor of Computer Applications at Graphic Era Hill University (2023–2026). I enjoy turning data into meaningful insights and creating user-friendly digital experiences.
 
 </p>
 
@@ -312,14 +303,13 @@ I am a passionate BCA student with a strong interest in data analytics, programm
 <div class="skills">
 
 <div class="skill">Python</div>
+<div class="skill">SQL</div>
+<div class="skill">Excel</div>
 <div class="skill">Data Analysis</div>
 <div class="skill">HTML</div>
 <div class="skill">CSS</div>
-<div class="skill">UI/UX Design</div>
 <div class="skill">Figma</div>
-<div class="skill">Git</div>
-<div class="skill">SQL</div>
-<div class="skill">Excel</div>
+<div class="skill">UI/UX Design</div>
 
 </div>
 
@@ -335,27 +325,22 @@ I am a passionate BCA student with a strong interest in data analytics, programm
 
 <div class="project">
 <h3>Student Performance Data Analysis</h3>
-<p>Analyzed student datasets using Python and Pandas to identify academic performance trends.</p>
+<p>Analyzed student dataset using Python & Pandas.</p>
 </div>
 
 <div class="project">
 <h3>Sales Data Dashboard</h3>
-<p>Built a dataset analysis dashboard showing sales trends and business insights.</p>
+<p>Built dashboard showing business insights.</p>
 </div>
 
 <div class="project">
-<h3>Nike Air Max Launch Webpage</h3>
-<p>Designed a modern product launch landing page in Figma.</p>
+<h3>Nike Air Max Launch Page</h3>
+<p>Product landing page designed in Figma.</p>
 </div>
 
 <div class="project">
-<h3>Mobile App User Journey</h3>
-<p>Designed a UX user flow inspired by Zobsia.</p>
-</div>
-
-<div class="project">
-<h3>Glass Icon UI Design</h3>
-<p>Created modern glass-style mobile icons in Figma.</p>
+<h3>Mobile UX User Journey</h3>
+<p>Designed onboarding flow and wireframes.</p>
 </div>
 
 </div>
@@ -371,27 +356,37 @@ I am a passionate BCA student with a strong interest in data analytics, programm
 <div class="certificates">
 
 <div class="certificate">
+<a href="CISCO DATA SCIENCE AYUSH GODIYAL CERTIFICATE.pdf" target="_blank">
 <img src="CISCO DATA SCIENCE AYUSH GODIYAL CERTIFICATE.jpg">
+</a>
 <p>Introduction to Data Science – Cisco</p>
 </div>
 
 <div class="certificate">
+<a href="deloite ayush.pdf" target="_blank">
 <img src="deloite ayush.jpg">
+</a>
 <p>Data Analytics – Deloitte</p>
 </div>
 
 <div class="certificate">
+<a href="TATA GEN AI AYUSH GODIYAL CERTIFICATE.pdf" target="_blank">
 <img src="TATA GEN AI AYUSH GODIYAL CERTIFICATE.jpg">
+</a>
 <p>GenAI Data Analytics – Tata</p>
 </div>
 
 <div class="certificate">
+<a href="JPMORGAN CHASE&CO. AYUSH CERTIFICATE.pdf" target="_blank">
 <img src="JPMORGAN CHASE&CO. AYUSH CERTIFICATE.jpg">
+</a>
 <p>Software Engineering – JP Morgan</p>
 </div>
 
 <div class="certificate">
+<a href="ayush intenship.pdf" target="_blank">
 <img src="ayush intenship.jpg">
+</a>
 <p>UI/UX Design Internship</p>
 </div>
 
@@ -427,7 +422,7 @@ I am a passionate BCA student with a strong interest in data analytics, programm
 
 <p>Connect with me professionally.</p>
 
-<a href="https://www.linkedin.com/in/ayush-godiyal-42859b21a?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
+<a href="https://www.linkedin.com/in/ayush-godiyal-42859b21a" target="_blank">
 <button class="btn">Visit My LinkedIn</button>
 </a>
 
@@ -437,17 +432,23 @@ I am a passionate BCA student with a strong interest in data analytics, programm
 
 <!-- RESUME -->
 
-<div style="text-align:center">
+<section id="resume">
+
+<h2 class="title">Resume</h2>
+
+<div class="contact">
+
 <a href="ayush godiyal data analyst resume.pdf" download>
 <button class="btn">Download Data Analyst Resume</button>
 </a>
+
+<a href="Ayush Godiyal ui ux resume.pdf" download>
+<button class="btn">Download UI/UX Resume</button>
+</a>
+
 </div>
 
-  <div style="text-align:center">
-<a href="Ayush Godiyal ui ux resume.pdf" download>
-<button class="btn">Download UI/UX Designer Resume</button>
-</a>
-</div>
+</section>
 
 <!-- CONTACT -->
 
@@ -474,3 +475,4 @@ I am a passionate BCA student with a strong interest in data analytics, programm
 </body>
 
 </html>
+
