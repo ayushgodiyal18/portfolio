@@ -28,10 +28,12 @@ color:white;
 nav{
 display:flex;
 justify-content:space-between;
+align-items:center;
 padding:20px 10%;
 background:#020617;
 position:sticky;
 top:0;
+flex-wrap:wrap;
 }
 
 nav ul{
@@ -56,12 +58,13 @@ color:#38bdf8;
 /* HERO */
 
 .hero{
-height:90vh;
+min-height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:40px;
 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("bg.png");
 background-size:cover;
 background-position:center;
@@ -107,11 +110,13 @@ display:flex;
 flex-wrap:wrap;
 align-items:center;
 gap:40px;
+justify-content:center;
 }
 
 .about img{
 width:180px;
 border-radius:50%;
+max-width:100%;
 }
 
 .about-text{
@@ -125,7 +130,6 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 
-/* Background Image */
 background-image:url("O.jpeg"); 
 background-size:cover;
 background-position:center;
@@ -136,7 +140,7 @@ border-radius:12px;
 }
 
 .edu-card{
-background:rgba(30,41,59,0.85); /* transparent glass effect */
+background:rgba(30,41,59,0.85);
 padding:20px;
 border-radius:10px;
 backdrop-filter: blur(5px);
@@ -189,10 +193,11 @@ background:#1e293b;
 padding:15px;
 border-radius:10px;
 text-align:center;
+max-width:300px;
 }
 
 .certificate img{
-width:250px;
+width:100%;
 border-radius:5px;
 }
 
@@ -207,6 +212,116 @@ background:#020617;
 text-align:center;
 padding:20px;
 margin-top:40px;
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+/* Tablets */
+@media (max-width:1024px){
+
+nav{
+padding:15px 5%;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+section{
+padding:60px 5%;
+}
+
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+nav{
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+nav ul{
+margin-top:10px;
+justify-content:center;
+}
+
+nav ul li{
+margin:8px;
+}
+
+.hero{
+height:auto;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.about{
+flex-direction:column;
+text-align:center;
+}
+
+.about img{
+width:140px;
+}
+
+iframe{
+height:300px;
+}
+
+.title{
+font-size:26px;
+}
+
+}
+
+/* Small phones */
+
+@media (max-width:480px){
+
+.hero h1{
+font-size:26px;
+}
+
+.hero p{
+font-size:14px;
+}
+
+.btn{
+padding:10px 18px;
+font-size:14px;
+}
+
+section{
+padding:50px 20px;
+}
+
+.skills{
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+}
+
+.projects{
+grid-template-columns:1fr;
+}
+
+.education{
+grid-template-columns:1fr;
+}
+
 }
 
 </style>
@@ -265,7 +380,6 @@ margin-top:40px;
 
 I am currently pursuing my Bachelor of Computer Applications from Graphic Era Hill University and have a strong interest in UI/UX design. I completed a one-month UI/UX internship and gained experience in Figma, wireframing, and interface design. I also designed and developed this portfolio website myself to showcase my design thinking and practical skills.
 
-
 </p>
 
 </div>
@@ -319,6 +433,7 @@ I am currently pursuing my Bachelor of Computer Applications from Graphic Era Hi
 <div class="skill">Wireframing</div>
 <div class="skill">Prototyping</div>
 <div class="skill">Design Thinking</div>
+
 </div>
 
 </section>
@@ -345,21 +460,21 @@ I am currently pursuing my Bachelor of Computer Applications from Graphic Era Hi
 <h3>Mobile Glass Icon.</h3>
 <p>Mobile Glass Icon.</p>
 </div>
- 
+
 <div class="project">
 <h3>Portfolio background design.</h3>
 <p>Portfolio background design.</p>
 </div>
 
- <div class="project">
+<div class="project">
 <h3>Gaming console webpage sale design.</h3>
 <p>Gaming console webpage sale design.</p>
 </div>
- 
+
 </div>
 
 </section>
- 
+
 <!-- FIGMA DESIGNS -->
 
 <section id="figma">
@@ -394,7 +509,6 @@ allowfullscreen>
 
 </div>
 
-
 <div class="project">
 
 <h3>Mobile Glass icon Design</h3>
@@ -407,8 +521,8 @@ allowfullscreen>
 </iframe>
 
 </div>
- 
- <div class="project">
+
+<div class="project">
 
 <h3>Portfolio background design</h3>
 
@@ -421,7 +535,7 @@ allowfullscreen>
 
 </div>
 
-  <div class="project">
+<div class="project">
 
 <h3>Gaming console webpage sale design</h3>
 
@@ -434,12 +548,9 @@ allowfullscreen>
 
 </div>
 
-
 </div>
 
 </section>
-
-
 
 <!-- CERTIFICATES -->
 
@@ -563,6 +674,5 @@ allowfullscreen>
 </footer>
 
 </body>
-
 </html>
 
